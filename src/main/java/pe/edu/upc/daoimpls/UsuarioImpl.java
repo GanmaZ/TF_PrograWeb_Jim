@@ -17,7 +17,7 @@ public class UsuarioImpl implements IUsuarioDao {
 
 	@Transactional
 	@Override
-	public void insertar(Usuario u) {
+	public void insert(Usuario u) {
 		try {
 			em.persist(u);// insertar
 		} catch (Exception e) {
@@ -27,7 +27,7 @@ public class UsuarioImpl implements IUsuarioDao {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<Usuario> listar() {
+	public List<Usuario> list() {
 		List<Usuario> listaUsuarios = new ArrayList<Usuario>();
 
 		try {

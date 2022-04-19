@@ -15,15 +15,15 @@ public class UsuarioServiceImpl implements IUsuarioService {
 	private IUsuarioDao uDao;
 
 	@Override
-	public void insertar(Usuario u) {
-		uDao.insertar(u);
+	public void insert(Usuario u) {
+		uDao.insert(u);
 
 	}
 
 	@Override
-	public List<Usuario> listar() {
+	public List<Usuario> list() {
 
-		return uDao.listar();
+		return uDao.list();
 	}
 
 	@Override

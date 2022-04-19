@@ -31,17 +31,17 @@ public class UsuarioController {
 		return "usuario.xhtml";
 	}
 
-	public void insertar() {
+	public void insert() {
 		try {
-			uService.insertar(u);
+			uService.insert(u);
 		} catch (Exception e) {
 			System.out.println("Error en Clase controller metodo-insertar");
 		}
 	}
 	
-	public void listar() {
+	public void list() {
 		try {
-			listaUsuarios = uService.listar();
+			listaUsuarios = uService.list();
 		} catch (Exception e) {
 			System.out.println("Error en Clase controller metodo-listar");
 		}
