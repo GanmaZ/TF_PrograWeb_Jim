@@ -19,7 +19,7 @@ public class UsuarioImpl implements IUsuarioDao {
 	@Override
 	public void insert(Usuario u) {
 		try {
-			em.persist(u);// insertar
+			em.persist(u);
 		} catch (Exception e) {
 			System.out.println("Error al insertar en UsuarioImpl");
 		}
