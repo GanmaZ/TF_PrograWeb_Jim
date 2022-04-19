@@ -39,4 +39,17 @@ public class UsuarioImpl implements IUsuarioDao {
 		return listaUsuarios;
 	}
 
+	@Transactional
+	@Override
+	public void delete(int id) {
+		try {
+			Usuario usr = em.find(Usuario.class, id);
+			em.remove(usr);
+			
+		} catch (Exception e) {
+			System.out.println("Error al Borrar en UsuarioImpl");
+		}
+		
+	}
+
 }

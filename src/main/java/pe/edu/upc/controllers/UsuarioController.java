@@ -46,6 +46,14 @@ public class UsuarioController {
 			System.out.println("Error en Clase controller metodo-listar");
 		}
 	}
+	
+	public void delete(Usuario usr) {
+		try {
+			uService.delete(usr.getIdUsuario());
+		} catch (Exception e) {
+			System.out.println("Error en Clase controller metodo-borrar");
+		}
+	}
 
 	public Usuario getU() {
 		return u;

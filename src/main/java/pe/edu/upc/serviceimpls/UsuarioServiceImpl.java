@@ -26,4 +26,10 @@ public class UsuarioServiceImpl implements IUsuarioService {
 		return uDao.listar();
 	}
 
+	@Override
+	public void delete(int id) {
+		uDao.delete(id);
+
+	}
+
 }
