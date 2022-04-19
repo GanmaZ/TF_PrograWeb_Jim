@@ -41,7 +41,7 @@ public class UsuarioController {
 	
 	public void listar() {
 		try {
-			uService.listar();
+			listaUsuarios = uService.listar();
 		} catch (Exception e) {
 			System.out.println("Error en Clase controller metodo-listar");
 		}
