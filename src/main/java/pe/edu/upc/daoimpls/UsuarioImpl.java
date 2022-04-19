@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.transaction.Transactional;
 
 import pe.edu.upc.daointerfaces.IUsuarioDao;
 import pe.edu.upc.entities.Usuario;
@@ -14,6 +15,7 @@ public class UsuarioImpl implements IUsuarioDao {
 	@PersistenceContext(unitName = "TF_Jim")
 	private EntityManager em;
 
+	@Transactional
 	@Override
 	public void insertar(Usuario u) {
 		try {
