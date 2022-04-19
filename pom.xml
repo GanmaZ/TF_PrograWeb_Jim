@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 
 	<build>
-		<finalName>TF_FastWear</finalName>
+		<finalName>TF_Jim</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

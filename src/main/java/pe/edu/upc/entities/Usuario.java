@@ -1,12 +1,28 @@
 package pe.edu.upc.entities;
 
-public class Usuario {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "Usuario")
+public class Usuario {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int IdUsuario;
+	
+	@Column(name = "NombreUsuario", nullable = false, length = 47)
 	private String NombreUsuario;
+	@Column(name = "ApellidoUsuario", nullable = false, length = 47)
 	private String ApellidoUsuario;
+	@Column(name = "CorreoUsuario", nullable = false, length = 47)
 	private String CorreoUsuario;
+	@Column(name = "ClaveUsuario", nullable = false, length = 47)
 	private String ClaveUsuario;
+	@Column(name = "TelefonoUsuario", nullable = false, length = 47)
 	private String TelefonoUsuario;
 
 	public Usuario() {
