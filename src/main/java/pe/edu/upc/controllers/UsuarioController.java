@@ -24,6 +24,7 @@ public class UsuarioController {
 	public void init() {
 		this.listaUsuarios = new ArrayList<Usuario>();
 		this.u = new Usuario();
+		this.list();
 	}
 
 	public String newUsuario() {
